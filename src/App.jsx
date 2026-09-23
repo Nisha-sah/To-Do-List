@@ -10,7 +10,7 @@ import DeleteTask from "./Components/deleteTask.jsx";
 import TaskStatus from "./Task Status Management/TaskStatus.jsx";
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/register" element={<Register />} />
